@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<link rel="stylesheet" href="/source/css/css.css">
+</head>
+<body>
+	<div id="app">
+	  	{{ message }}
+		<div class="test" v-html="rawHtml"></div>
+		<div class="reverse">{{ reversedMessage }}</div>
+		<div class="static" v-bind:class=" { active: isActive } "> isActive</div>
+    <button class="static" v-on:click="toggleActive"> isActive</button>
+	</div>
+
+
+	<!-- JS -->
+	<script src="https://unpkg.com/vue"></script>
+	<script src="/source/js/js.js"></script>
+</body>
+</html>
